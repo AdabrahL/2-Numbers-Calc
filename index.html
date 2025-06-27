@@ -1,0 +1,83 @@
+
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+
+<body>
+   <div class="row justify-content" style="margin: 20px;">
+    <!-- Addition -->
+    <div class="col6 calc-box" style="border: 2px solid blue; width: 350px; padding: 20px; ">
+      <h1 style="text-align: center;">Add Two Numbers</h1>
+      <label>Enter NUMBER 1</label>
+      <input type="text" id="addNum1" placeholder="1st Number" required/><br><br>
+      <label>Enter NUMBER 2</label>
+      <input type="text" id="addNum2" placeholder="2nd Number" required/><br><br>
+      <h6 id="addValidationResult" style="color: red;"></h6>
+      <button onclick="calculateSum()" style="background-color: blue;color: white;font-weight: bold;">Calculate</button><br><br>
+      <label>Result</label>
+      <input type="text" id="addResult" readonly/>
+      <button onclick="clearAdd()">Clear</button>
+    </div>
+
+    <!-- Subtraction -->
+    <div class="col6 calc-box" style="border: 2px solid blue; width: 350px; padding: 20px; margin-left: 20px;">
+      <h1 style="text-align: center;">Subtract Two Numbers</h1>
+      <label>Enter NUMBER 1</label>
+      <input type="text" id="subNum1" placeholder="1st Number" required/><br><br>
+      <label>Enter NUMBER 2</label>
+      <input type="text" id="subNum2" placeholder="2nd Number" required/><br><br>
+      <h6 id="subValidationResult" style="color: red;"></h6>
+      <button onclick="subtractValue()"style="background-color: blue;color: white;font-weight: bold;">Calculate</button><br><br>
+      <label>Result</label>
+      <input type="text" id="subResult" readonly/>
+      <button onclick="clearSub()">Clear</button>
+    </div>
+  </div>
+
+  <div class="row justify-content" style="margin: 20px;">
+    <!-- Multiply -->
+    <div class="calc-box" style="border: 2px solid blue; width: 350px; padding: 20px;margin-right: 20px;">
+      <h1 style="text-align: center;">Multiply Two Numbers</h1>
+      <label>Enter NUMBER 1</label>
+      <input type="text" id="mulpNum1" placeholder="1st Number" required/><br><br>
+      <label>Enter NUMBER 2</label>
+      <input type="text" id="mulpNum2" placeholder="2nd Number" required/><br><br>
+      <h6 id="mulpValidationResult" style="color: red;"></h6>
+      <button onclick="multiplyValue()"style="background-color: blue;color: white;font-weight: bold;">Calculate</button><br><br>
+      <label>Result</label>
+      <input type="text" id="mulpResult" readonly/>
+      <button onclick="clearMulp()">Clear</button>
+    </div>
+
+    <!-- Divide -->
+    <div class="calc-box" style="border: 2px solid blue; width: 350px; padding: 20px; ">
+      <h1 style="text-align: center;">Divide Two Numbers</h1>
+      <label>Enter NUMBER 1</label>
+      <input type="text" id="devNum1" placeholder="1st Number" required/><br><br>
+      <label>Enter NUMBER 2</label>
+      <input type="text" id="devNum2" placeholder="2nd Number" required/><br><br>
+      <h6 id="devValidationResult" style="color: red;"></h6>
+      <button onclick="devideValue()" style="background-color: blue;color: white;font-weight: bold;">Calculate</button><br><br>
+      <label>Result</label>
+      <input type="text" id="devResult" readonly/>
+      <button onclick="clearDev()">Clear</button>
+    </div>
+  </div>
+
+  <!-- Color Button Row -->
+  
+    <div class="col-auto">
+      <button class="btn btn-primary" style="margin-left: 280px;" onclick="changeBoxColors()">Change Background Color</button>
+    </div>
+  
+</body>
+<script src="index.js"></script>
+
+
+</html>
